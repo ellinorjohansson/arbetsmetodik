@@ -27,7 +27,7 @@ createImg();
             return innerArticle;
     }
 
-    function createTextiv() {
+    function createTextDiv() {
         const textDiv = document.createElement('div');
         textDiv.setAttribute('class', 'section__article-div');
         innerArticle.appendChild(textDiv);
