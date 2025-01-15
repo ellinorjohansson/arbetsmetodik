@@ -1,4 +1,4 @@
-import {getPodcasts} from './api'
+import getPodcasts from './api.mjs';
 
 
 const podCastContainer = document.querySelector('.section__podlist-pods');
@@ -67,4 +67,4 @@ function createHeader() {
 })
 }
 
-export default createHtml
+export default createHtml;

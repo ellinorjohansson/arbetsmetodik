@@ -16,4 +16,4 @@ export function toggleLightMode (){
     
 }
 
-export default toggleLightMode
+export default toggleLightMode;
