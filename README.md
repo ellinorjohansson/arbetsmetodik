@@ -9,7 +9,7 @@ G
 - [x] Mobilvyn
 - [x] Språk
 - [ ] Rensa loggning
-- [ ] Dokumentation
+- [x] Dokumentation
 - [ ] Tillgänglighet (bilder)
 - [ ] Refaktorera funktioner
 - [ ] Eliminera onödig kod
@@ -26,3 +26,74 @@ VG
 - [ ] Läs av utvecklingsmiljön
 - [ ] Enhetlig syntax i CSS:en
 - [ ] Publicera sidan på GitHub pages
+
+# SR Humor API Webpage
+
+This project is a simple webpage that fetches data from the SR humor programs API. It displays program images, descriptions and direct links to listen to the episodes.
+
+## Table of Contents
+
+- [Tech](#tech)
+- [Installation](#installation)
+- [Screenshots](#screenshots)
+  - [Live version](#live-version)
+- [Documentation](#documentation)
+  - [Lighthouse report](#lighthouse-report)
+  - [Validation](#validation)
+- [Authors](#authors)
+
+## Tech Stack
+
+- TypeScript
+- Sass
+- Vite
+- ESLint
+
+## Installation
+
+Install fed24d-arbetsmetodik-inl-1-ellinorjohansson locally with npm
+
+```bash
+# Clone this repository
+$ git clone https://github.com/Medieinstitutet/fed24d-arbetsmetodik-inl-1-ellinorjohansson
+
+# Go into the repository
+$ cd fed24d-arbetsmetodik-inl-1-ellinorjohansson
+
+# Install dependencies
+$ npm install
+
+# Run app
+$ npm run dev
+```
+
+## Screenshots
+
+### Live version
+
+![App Screenshot mobile screen](./assets/screenshots/mobile-screenshot.avif)
+
+#### Desktop
+
+![App Screenshot desktop screen](./assets/screenshots/desktop-screenshot.avif)
+
+## Documentation
+
+### Lighthouse report
+
+![Lighthouse report]()
+
+### Validation
+
+#### HTML
+
+![Validation HTML]()
+
+#### CSS
+
+![Validation CSS]()
+
+
+## Authors
+
+- [@ellinorjohansson](https://www.github.com/ellinorjohansson)
