@@ -13,21 +13,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
   }
-  .section__article-innerarticle{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2rem;
-  }
-  
-  .section__article-div{
-    display: inline-flex;
-    flex-direction: column;
-    margin-top: 0;
-    margin-left: 1rem;
-  }
-  img{
-    margin-top: .5rem;
-  }
+
+  //Typography
+
   h1{
     font-size: 40px;
     text-align: center;
@@ -41,23 +29,52 @@ body {
     font-size: 1rem;
     margin: 0;
   }
+
+  //Links
+
   a {
     color:rgba(255, 255, 255, 0.87);
     cursor: pointer;
+
+    &:hover,
+    &:active{
+      color:rgb(85, 85, 218);
+    }
+  }
+ 
+  //Images
+
+  img{
+    margin-top: .5rem;
+  }
+
+  //Layout
   
+  .section__article-innerarticle{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
   }
-  a :active, a:hover{
-    color:rgb(85, 85, 218);
+
+  .section__article-div{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 1rem;
   }
+
+  //Dark mode
   
   .darkmode{
     background-color: antiquewhite;
     color: #242424;
-  }
-  .darkmode a{
-    color: #242424;
-  }
-  .darkmode a:active, .darkmode a:hover{
-    color:rgb(85, 85, 218);
+    a {
+      color: #242424;
+
+      &:hover,
+      &:active {
+        color:rgb(85, 85, 218);
+      }
+    }
   }
  
