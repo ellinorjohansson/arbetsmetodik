@@ -20,11 +20,12 @@ body {
     font-size: 40px;
     text-align: center;
   }
+
   h2{
     font-size: 1.25rem;
     margin: 0;
-  
   }
+
   p{
     font-size: 1rem;
     margin: 0;
@@ -50,17 +51,17 @@ body {
 
   //Layout
   
-  .section__article-innerarticle{
+  .section__article{
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
-  }
-
-  .section__article-div{
-    display: inline-flex;
-    flex-direction: column;
-    margin-top: 0;
-    margin-left: 1rem;
+    
+    &-content{
+      display: inline-flex;
+      flex-direction: column;
+      margin-top: 0;
+      margin-left: 1rem;
+    }
   }
 
   //Dark mode

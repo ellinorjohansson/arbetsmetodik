@@ -21,7 +21,7 @@ createImg();
 
     function createInnerArticle() {
         const innerArticle = document.createElement('article');
-        innerArticle.setAttribute('class', 'section__article-innerarticle');
+        innerArticle.setAttribute('class', 'section__article');
             innerArticle.setAttribute('tabindex', '1')
             podCastContainer.appendChild(innerArticle);
             return innerArticle;
@@ -29,7 +29,7 @@ createImg();
 
     function createTextDiv() {
         const textDiv = document.createElement('div');
-        textDiv.setAttribute('class', 'section__article-div');
+        textDiv.setAttribute('class', 'section__article-content');
         innerArticle.appendChild(textDiv);
         return textDiv;
     }
