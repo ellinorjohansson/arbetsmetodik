@@ -1,81 +1,83 @@
+//Base style
+
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-  
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-  
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+//Typography
+
+h1{
+  font-size: 40px;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+p{
+  font-size: 1rem;
+  margin: 0;
+}
+
+//Links
+
+a {
+  color:rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+
+  &:hover,
+  &:active{
+    color:rgb(85, 85, 218);
   }
+}
 
-  //Typography
+//Images
 
-  h1{
-    font-size: 40px;
-    text-align: center;
+img{
+  margin-top: .5rem;
+}
+
+//Layout
+
+.section__article{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+
+  &-content{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 1rem;
   }
+}
 
-  h2{
-    font-size: 1.25rem;
-    margin: 0;
-  }
+//Dark mode
 
-  p{
-    font-size: 1rem;
-    margin: 0;
-  }
-
-  //Links
-
+.darkmode{
+  background-color: antiquewhite;
+  color: #242424;
   a {
-    color:rgba(255, 255, 255, 0.87);
-    cursor: pointer;
+    color: #242424;
 
     &:hover,
-    &:active{
+    &:active {
       color:rgb(85, 85, 218);
     }
   }
- 
-  //Images
-
-  img{
-    margin-top: .5rem;
-  }
-
-  //Layout
-  
-  .section__article{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2rem;
-    
-    &-content{
-      display: inline-flex;
-      flex-direction: column;
-      margin-top: 0;
-      margin-left: 1rem;
-    }
-  }
-
-  //Dark mode
-  
-  .darkmode{
-    background-color: antiquewhite;
-    color: #242424;
-    a {
-      color: #242424;
-
-      &:hover,
-      &:active {
-        color:rgb(85, 85, 218);
-      }
-    }
-  }
+}
  
