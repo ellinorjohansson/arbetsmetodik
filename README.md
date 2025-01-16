@@ -5,8 +5,8 @@ G
 - [x] CSS till Sass
 - [x] Enhetlig namngivning i CSS:en
 - [x] Konvertera till TypeScript
-- [ ] Enhetlig kodkvalitet
-- [ ] Mobilvyn
+- [x] Enhetlig kodkvalitet
+- [x] Mobilvyn
 - [ ] Språk
 - [ ] Rensa loggning
 - [ ] Dokumentation
