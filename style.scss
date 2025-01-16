@@ -1,8 +1,8 @@
-@import './src/sass/base';
+@import './src/scss/base';
 
 @media screen and (min-width: 1000px) {
-  @import './src/sass/tablet';
+  @import './src/scss/tablet';
 }
 @media screen and (min-width: 1440px) {
-  @import './src/sass/desktop';
+  @import './src/scss/desktop';
 }
