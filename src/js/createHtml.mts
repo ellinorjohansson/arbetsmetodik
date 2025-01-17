@@ -32,7 +32,6 @@ function createPodcast(podcast: Podcast): void {
 function createInnerArticle(): HTMLElement {
   const innerArticle = document.createElement('article');
   innerArticle.classList.add('section__article');
-  innerArticle.setAttribute('tabindex', '1');
   podCastContainer.appendChild(innerArticle);
   return innerArticle;
 }
@@ -71,7 +70,6 @@ function createLink(textDiv: HTMLElement, programUrl: string): void {
   const linkPlacement = document.createElement('a');
   const linkText = document.createTextNode('Lyssna här');
   linkPlacement.setAttribute('href', programUrl);
-  linkPlacement.setAttribute('tabindex', '1');
   linkPlacement.appendChild(linkText);
   textDiv.appendChild(linkPlacement);
 }
