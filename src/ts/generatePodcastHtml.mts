@@ -1,69 +1,58 @@
-import fetchPodcasts, {IPodcast} from './getPodcastApi.mjs';
+import fetchPodcasts, { IPodcast } from './getPodcastApi.mjs';
 
 const podcastContainer = document.querySelector('.section__podlist-pods') as HTMLElement;
 
 export async function renderPodcasts(): Promise<void> {
   const podcasts = await fetchPodcasts();
-
-  if (podcasts && podcasts.programs) {
-    podcasts.programs.forEach((podcastItem: IPodcast) => {
-      createPodcast(podcastItem);
-    });
-  }
+  podcasts?.programs?.forEach(podcastItem => createPodcast(podcastItem));
 }
 
 function createPodcast(podcastItem: IPodcast): void {
-  const articleElement = createArticle();
-  createImage(articleElement, podcastItem.socialimage, podcastItem.name);
-  const textDiv = createTextDiv(articleElement);
+  const articleElement = createArticleElement();
+  podcastContainer.appendChild(articleElement);
 
-  createHeader(textDiv, podcastItem.name);
-  createParagraph(textDiv, podcastItem.description);
-  createLink(textDiv, podcastItem.programurl);
+  const imgElement = createImageElement(podcastItem.socialimage, podcastItem.name);
+  articleElement.appendChild(imgElement);
+
+  const textDiv = createTextDiv();
+  articleElement.appendChild(textDiv);
+
+  createTextContent(textDiv, podcastItem.name, podcastItem.description, podcastItem.programurl);
 }
 
-function createArticle(): HTMLElement {
+function createArticleElement(): HTMLElement {
   const articleElement = document.createElement('article');
   articleElement.classList.add('section__article');
-  podcastContainer.appendChild(articleElement);
   return articleElement;
 }
 
-function createTextDiv(innerArticle: HTMLElement): HTMLElement {
-  const textDiv = document.createElement('div');
-  textDiv.classList.add('section__article-content');
-  innerArticle.appendChild(textDiv);
-  return textDiv;
-}
-
-function createImage(innerArticle: HTMLElement, imageUrl: string, podcastName: string): void {
+function createImageElement(imageUrl: string, altText: string): HTMLImageElement {
   const imgElement = document.createElement('img');
   imgElement.src = imageUrl;
   imgElement.width = 100;
   imgElement.height = 100;
-  imgElement.setAttribute('alt', `Omslagsbild för podcasten: ${podcastName}`); 
-  innerArticle.appendChild(imgElement);
+  imgElement.setAttribute('alt', `Omslagsbild för podcasten: ${altText}`);
+  return imgElement;
 }
 
-function createHeader(textDiv: HTMLElement, programName: string): void {
+function createTextDiv(): HTMLDivElement {
+  const textDiv = document.createElement('div');
+  textDiv.classList.add('section__article-content');
+  return textDiv;
+}
+
+function createTextContent(textDiv: HTMLElement, programName: string, description: string, programUrl: string): void {
   const headerElement = document.createElement('h2');
-  const headerText = document.createTextNode(programName);
-  headerElement.appendChild(headerText);
+  headerElement.textContent = programName;
   textDiv.appendChild(headerElement);
-}
 
-function createParagraph(textDiv: HTMLElement, description: string): void {
   const descElement = document.createElement('p');
-  const descText = document.createTextNode(description);
-  descElement.appendChild(descText);
+  descElement.textContent = description;
   textDiv.appendChild(descElement);
-}
 
-function createLink(textDiv: HTMLElement, programUrl: string): void {
   const linkElement = document.createElement('a');
-  const linkText = document.createTextNode('Lyssna här');
-  linkElement.setAttribute('href', programUrl);
-  linkElement.appendChild(linkText);
+  linkElement.href = programUrl;
+  linkElement.textContent = 'Lyssna här';
   textDiv.appendChild(linkElement);
 }
 
