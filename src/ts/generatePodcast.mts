@@ -53,25 +53,25 @@ function createImg(innerArticle: HTMLElement, imageUrl: string, podcastName: str
 }
 
 function createHeader(textDiv: HTMLElement, programName: string): void {
-  const headerPlacement = document.createElement('h2');
+  const headerElement = document.createElement('h2');
   const headerText = document.createTextNode(programName);
-  headerPlacement.appendChild(headerText);
-  textDiv.appendChild(headerPlacement);
+  headerElement.appendChild(headerText);
+  textDiv.appendChild(headerElement);
 }
 
 function createP(textDiv: HTMLElement, description: string): void {
-  const descPlacement = document.createElement('p');
+  const descElement = document.createElement('p');
   const descText = document.createTextNode(description);
-  descPlacement.appendChild(descText);
-  textDiv.appendChild(descPlacement);
+  descElement.appendChild(descText);
+  textDiv.appendChild(descElement);
 }
 
 function createLink(textDiv: HTMLElement, programUrl: string): void {
-  const linkPlacement = document.createElement('a');
+  const linkElement = document.createElement('a');
   const linkText = document.createTextNode('Lyssna här');
-  linkPlacement.setAttribute('href', programUrl);
-  linkPlacement.appendChild(linkText);
-  textDiv.appendChild(linkPlacement);
+  linkElement.setAttribute('href', programUrl);
+  linkElement.appendChild(linkText);
+  textDiv.appendChild(linkElement);
 }
 
 export default renderPodcasts;
