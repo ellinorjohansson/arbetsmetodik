@@ -1,6 +1,6 @@
 import './style.scss';
-import createHtml from './src/js/createHtml.mts';
-import toggleLightMode from './src/js/toggleDarkmode.mts';
+import createHtml from './src/ts/generatePodcast.mts';
+import toggleLightMode from './src/ts/toggleDarkmode.mts';
 
 function init (){
 
