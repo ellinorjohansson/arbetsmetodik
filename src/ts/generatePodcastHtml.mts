@@ -1,9 +1,9 @@
-import getPodcasts, {IPodcast} from './getPodcastApi.mjs';
+import fetchPodcasts, {IPodcast} from './getPodcastApi.mjs';
 
 const podcastContainer = document.querySelector('.section__podlist-pods') as HTMLElement;
 
 export async function renderPodcasts(): Promise<void> {
-  const podcasts = await getPodcasts();
+  const podcasts = await fetchPodcasts();
 
   if (podcasts && podcasts.programs) {
     podcasts.programs.forEach((podcastItem: IPodcast) => {
