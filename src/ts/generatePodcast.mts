@@ -44,12 +44,12 @@ function createTextDiv(innerArticle: HTMLElement): HTMLElement {
 }
 
 function createImg(innerArticle: HTMLElement, imageUrl: string, podcastName: string): void {
-  const imgPlacement = document.createElement('img');
-  imgPlacement.src = imageUrl;
-  imgPlacement.width = 100;
-  imgPlacement.height = 100;
-  imgPlacement.setAttribute('alt', `Omslagsbild för podcasten: ${podcastName}`); 
-  innerArticle.appendChild(imgPlacement);
+  const imgElement = document.createElement('img');
+  imgElement.src = imageUrl;
+  imgElement.width = 100;
+  imgElement.height = 100;
+  imgElement.setAttribute('alt', `Omslagsbild för podcasten: ${podcastName}`); 
+  innerArticle.appendChild(imgElement);
 }
 
 function createHeader(textDiv: HTMLElement, programName: string): void {
