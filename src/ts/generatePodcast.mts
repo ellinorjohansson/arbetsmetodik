@@ -10,10 +10,10 @@ interface Podcast {
 }
 
 export async function renderPodcasts(): Promise<void> {
-  const podCasts = await getPodcasts();
+  const podcasts = await getPodcasts();
 
-  if (podCasts && podCasts.programs) {
-    podCasts.programs.forEach((podcast: Podcast) => {
+  if (podcasts && podcasts.programs) {
+    podcasts.programs.forEach((podcast: Podcast) => {
       createPodcast(podcast);
     });
   }
