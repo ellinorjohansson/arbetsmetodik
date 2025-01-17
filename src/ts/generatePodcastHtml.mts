@@ -1,4 +1,4 @@
-import getPodcasts, {Podcast} from './getPodcastApi.mjs';
+import getPodcasts, {IPodcast} from './getPodcastApi.mjs';
 
 const podcastContainer = document.querySelector('.section__podlist-pods') as HTMLElement;
 
@@ -6,13 +6,13 @@ export async function renderPodcasts(): Promise<void> {
   const podcasts = await getPodcasts();
 
   if (podcasts && podcasts.programs) {
-    podcasts.programs.forEach((podcastItem: Podcast) => {
+    podcasts.programs.forEach((podcastItem: IPodcast) => {
       createPodcast(podcastItem);
     });
   }
 }
 
-function createPodcast(podcastItem: Podcast): void {
+function createPodcast(podcastItem: IPodcast): void {
   const articleElement = createArticle();
   createImage(articleElement, podcastItem.socialimage, podcastItem.name);
   const textDiv = createTextDiv(articleElement);

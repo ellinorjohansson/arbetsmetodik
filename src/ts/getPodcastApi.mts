@@ -1,4 +1,4 @@
-export interface Podcast {
+export interface IPodcast {
     name: string;
     description: string;
     programurl: string;
@@ -6,7 +6,7 @@ export interface Podcast {
   }
  
   interface PodcastResponse {
-    programs: Podcast[];
+    programs: IPodcast[];
   }
  
   export async function getPodcasts(): Promise<PodcastResponse | null> {
