@@ -20,9 +20,9 @@ export async function renderPodcasts(): Promise<void> {
 }
 
 function createPodcast(podcast: Podcast): void {
-  const innerArticle = createInnerArticle();
-  createImg(innerArticle, podcast.socialimage, podcast.name);
-  const textDiv = createTextDiv(innerArticle);
+  const articleElement = createInnerArticle();
+  createImg(articleElement, podcast.socialimage, podcast.name);
+  const textDiv = createTextDiv(articleElement);
 
   createHeader(textDiv, podcast.name);
   createP(textDiv, podcast.description);
@@ -30,10 +30,10 @@ function createPodcast(podcast: Podcast): void {
 }
 
 function createInnerArticle(): HTMLElement {
-  const innerArticle = document.createElement('article');
-  innerArticle.classList.add('section__article');
-  podcastContainer.appendChild(innerArticle);
-  return innerArticle;
+  const articleElement = document.createElement('article');
+  articleElement.classList.add('section__article');
+  podcastContainer.appendChild(articleElement);
+  return articleElement;
 }
 
 function createTextDiv(innerArticle: HTMLElement): HTMLElement {
