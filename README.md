@@ -13,8 +13,9 @@ G
 - [x] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
 - [ ] Eliminera onödig kod
-- [ ] Rensa bort kod som inte ska sättas
-  
+- [x] Rensa bort kod som inte ska sättas
+- [ ] Refaktorera namngivning
+
 VG
 - [ ] Rätt sak på rätt plats
 - [ ] Hantera loggning på ett effektivt sätt

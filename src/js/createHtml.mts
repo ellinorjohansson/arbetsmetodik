@@ -1,6 +1,6 @@
 import getPodcasts from './api.mts';
 
-const podCastContainer = document.querySelector('.section__podlist-pods') as HTMLElement;
+const podcastContainer = document.querySelector('.section__podlist-pods') as HTMLElement;
 
 interface Podcast {
   name: string;
@@ -32,7 +32,7 @@ function createPodcast(podcast: Podcast): void {
 function createInnerArticle(): HTMLElement {
   const innerArticle = document.createElement('article');
   innerArticle.classList.add('section__article');
-  podCastContainer.appendChild(innerArticle);
+  podcastContainer.appendChild(innerArticle);
   return innerArticle;
 }
 
