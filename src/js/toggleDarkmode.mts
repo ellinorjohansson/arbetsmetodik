@@ -1,19 +1,24 @@
-const toggleLightModeButton = document.querySelector('.toggle-btn');
-toggleLightModeButton.addEventListener('click', toggleLightMode);
-console.log(toggleLightModeButton);
+const toggleLightModeButton: HTMLElement | null = document.querySelector('.toggle-btn');
+if (toggleLightModeButton) {
+    toggleLightModeButton.addEventListener('click', toggleLightMode);
+    console.log(toggleLightModeButton);
+} else {
+    console.error('Knappen med klassen "toggle-btn" hittades inte!');
+}
 
-export function toggleLightMode (){
-    document.body.classList.toggle('darkmode')
-    if (document.body.classList.contains('darkmode')){
-        toggleLightModeButton.innerHTML='Välj mörkt läge'
+export function toggleLightMode(): void {
+    document.body.classList.toggle('darkmode');
+    if (document.body.classList.contains('darkmode')) {
+        if (toggleLightModeButton) {
+            toggleLightModeButton.innerHTML = 'Välj mörkt läge';
+        }
         console.log('mörkt läge');
-    } 
-    
-    else {
-        toggleLightModeButton.innerHTML ='Välj ljust läge'
-    console.og('ljust läge')
+    } else {
+        if (toggleLightModeButton) {
+            toggleLightModeButton.innerHTML = 'Välj ljust läge';
+        }
+        console.log('ljust läge');
     }
-    
 }
 
 export default toggleLightMode;
