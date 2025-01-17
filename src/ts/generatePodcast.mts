@@ -25,7 +25,7 @@ function createPodcast(podcast: Podcast): void {
   const textDiv = createTextDiv(articleElement);
 
   createHeader(textDiv, podcast.name);
-  createP(textDiv, podcast.description);
+  createParagraph(textDiv, podcast.description);
   createLink(textDiv, podcast.programurl);
 }
 
@@ -59,7 +59,7 @@ function createHeader(textDiv: HTMLElement, programName: string): void {
   textDiv.appendChild(headerElement);
 }
 
-function createP(textDiv: HTMLElement, description: string): void {
+function createParagraph(textDiv: HTMLElement, description: string): void {
   const descElement = document.createElement('p');
   const descText = document.createTextNode(description);
   descElement.appendChild(descText);
