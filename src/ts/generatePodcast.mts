@@ -21,7 +21,7 @@ export async function renderPodcasts(): Promise<void> {
 
 function createPodcast(podcast: Podcast): void {
   const articleElement = createInnerArticle();
-  createImg(articleElement, podcast.socialimage, podcast.name);
+  createImage(articleElement, podcast.socialimage, podcast.name);
   const textDiv = createTextDiv(articleElement);
 
   createHeader(textDiv, podcast.name);
@@ -43,7 +43,7 @@ function createTextDiv(innerArticle: HTMLElement): HTMLElement {
   return textDiv;
 }
 
-function createImg(innerArticle: HTMLElement, imageUrl: string, podcastName: string): void {
+function createImage(innerArticle: HTMLElement, imageUrl: string, podcastName: string): void {
   const imgElement = document.createElement('img');
   imgElement.src = imageUrl;
   imgElement.width = 100;
