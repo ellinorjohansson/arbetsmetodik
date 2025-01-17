@@ -44,10 +44,11 @@ This project is a simple webpage that fetches data from the SR humor programs AP
 
 ## Tech Stack
 
-- TypeScript
-- Sass
-- Vite
-- ESLint
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+- ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+- ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white)
+
 
 ## Installation
 
