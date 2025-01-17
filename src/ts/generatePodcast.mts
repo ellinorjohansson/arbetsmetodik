@@ -9,7 +9,7 @@ interface Podcast {
   socialimage: string;
 }
 
-export async function createHtml(): Promise<void> {
+export async function renderPodcasts(): Promise<void> {
   const podCasts = await getPodcasts();
 
   if (podCasts && podCasts.programs) {
@@ -74,4 +74,4 @@ function createLink(textDiv: HTMLElement, programUrl: string): void {
   textDiv.appendChild(linkPlacement);
 }
 
-export default createHtml;
+export default renderPodcasts;
