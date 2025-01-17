@@ -1,35 +1,28 @@
-import getPodcasts from './api.mts';
+import getPodcasts, {Podcast} from './getPodcastApi.mjs';
 
 const podcastContainer = document.querySelector('.section__podlist-pods') as HTMLElement;
-
-interface Podcast {
-  name: string;
-  description: string;
-  programurl: string;
-  socialimage: string;
-}
 
 export async function renderPodcasts(): Promise<void> {
   const podcasts = await getPodcasts();
 
   if (podcasts && podcasts.programs) {
-    podcasts.programs.forEach((podcast: Podcast) => {
-      createPodcast(podcast);
+    podcasts.programs.forEach((podcastItem: Podcast) => {
+      createPodcast(podcastItem);
     });
   }
 }
 
-function createPodcast(podcast: Podcast): void {
-  const articleElement = createInnerArticle();
-  createImage(articleElement, podcast.socialimage, podcast.name);
+function createPodcast(podcastItem: Podcast): void {
+  const articleElement = createArticle();
+  createImage(articleElement, podcastItem.socialimage, podcastItem.name);
   const textDiv = createTextDiv(articleElement);
 
-  createHeader(textDiv, podcast.name);
-  createParagraph(textDiv, podcast.description);
-  createLink(textDiv, podcast.programurl);
+  createHeader(textDiv, podcastItem.name);
+  createParagraph(textDiv, podcastItem.description);
+  createLink(textDiv, podcastItem.programurl);
 }
 
-function createInnerArticle(): HTMLElement {
+function createArticle(): HTMLElement {
   const articleElement = document.createElement('article');
   articleElement.classList.add('section__article');
   podcastContainer.appendChild(articleElement);

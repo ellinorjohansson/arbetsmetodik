@@ -1,4 +1,4 @@
-interface Podcast {
+export interface Podcast {
     name: string;
     description: string;
     programurl: string;
