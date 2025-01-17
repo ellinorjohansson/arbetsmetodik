@@ -9,7 +9,7 @@ export async function createHtml (){
     podCasts.programs.forEach((podcast) => {
     const innerArticle = createInnerArticle();
 
-createImg();
+    createImg();
 
     const textDiv = createTextDiv();
 
@@ -20,7 +20,7 @@ createImg();
     function createInnerArticle() {
         const innerArticle = document.createElement('article');
         innerArticle.setAttribute('class', 'section__article');
-            innerArticle.setAttribute('tabindex', '1')
+            innerArticle.setAttribute('tabindex', '1');
             podCastContainer.appendChild(innerArticle);
             return innerArticle;
     }
@@ -36,15 +36,16 @@ createImg();
         const linkPlacement = document.createElement('a');
         const linkText = document.createTextNode('Lyssna här');
         linkPlacement.setAttribute('href', podcast.programurl);
-        linkPlacement.setAttribute('tabindex', '1')
+        linkPlacement.setAttribute('tabindex', '1');
         linkPlacement.appendChild(linkText);
-        textDiv.appendChild(linkPlacement)
+        textDiv.appendChild(linkPlacement);
     }
     function createImg() {
         const imgPlacement = document.createElement('IMG');
         imgPlacement.setAttribute('src', podcast.socialimage);
         imgPlacement.setAttribute('width', '100');
-        imgPlacement.setAttribute('height', '100')
+        imgPlacement.setAttribute('height', '100');
+        imgPlacement.setAttribute('alt', `Omslagsbild för podcasten: ${podcast.name}`); 
         innerArticle.appendChild(imgPlacement);
     }
 
