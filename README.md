@@ -37,7 +37,6 @@ This project is a simple webpage that fetches data from the SR humor programs AP
 - [Tech](#tech)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
-  - [Live version](#live-version)
 - [Documentation](#documentation)
   - [Lighthouse report](#lighthouse-report)
   - [Validation](#validation)
@@ -71,7 +70,7 @@ $ npm run dev
 
 ## Screenshots
 
-### Live version
+### Mobile
 
 ![App Screenshot mobile screen](./assets/screenshots/mobile-screenshot.avif)
 
