@@ -12,12 +12,12 @@ export function toggleLightMode(): void {
         if (toggleLightModeButton) {
             toggleLightModeButton.innerHTML = 'Välj mörkt läge';
         }
-        console.log('mörkt läge');
+        console.log('ljust läge');
     } else {
         if (toggleLightModeButton) {
             toggleLightModeButton.innerHTML = 'Välj ljust läge';
         }
-        console.log('ljust läge');
+        console.log('mörkt läge');
     }
 }
 
