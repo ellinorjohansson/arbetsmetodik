@@ -14,7 +14,7 @@ G
 - [x] Refaktorera funktioner
 - [x] Eliminera onödig kod
 - [x] Rensa bort kod som inte ska sättas
-- [ ] Refaktorera namngivning
+- [x] Refaktorera namngivning
 
 VG
 - [ ] Rätt sak på rätt plats
