@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  'base': '/fed24d-arbetsmetodik-inl-1-ellinorjohansson/',
-}); 
+  base: '/fed24d-arbetsmetodik-inl-1-ellinorjohansson/', 
+  build: {
+    outDir: 'dist',  
+  },
+});
