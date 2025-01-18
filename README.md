@@ -26,7 +26,7 @@ VG
 - [ ] Gör en Lighthouse-analys
 - [ ] Läs av utvecklingsmiljön
 - [ ] Enhetlig syntax i CSS:en
-- [ ] Publicera sidan på GitHub pages
+- [x] Publicera sidan på GitHub pages
 
 # SR Humor API Webpage
 
