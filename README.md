@@ -1,5 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Bzh4RYwL)
-
 G
 - [x] Få projektet att funka
 - [x] CSS till Sass
@@ -31,10 +29,21 @@ VG
 # SR Humor API Webpage
 
 This project is a simple webpage that fetches data from the SR humor programs API. It displays program images, descriptions and direct links to listen to the episodes.
+- [Link to live version](https://medieinstitutet.github.io/fed24d-arbetsmetodik-inl-1-ellinorjohansson/)
+
+## What I learned from this project 
+
+- Converting a project from pnpm to npm.
+- Converting from JavaScript to TypeScript.
+- Convert CSS to Sass.
+- Bugs can be right in front of you.
+  - I learned this when fixing GitHub Pages. The bug I initially thought was due to Vite not converting my TypeScript files turned out to be a naming error, which was obvious afterward. But I never gave up!
+- Refactoring code.
+- Using conventional commits.
 
 ## Table of Contents
 
-- [Tech](#tech)
+- [Tech](#tech-stack)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
 - [Documentation](#documentation)
