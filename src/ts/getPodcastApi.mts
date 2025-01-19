@@ -18,14 +18,15 @@ export async function fetchPodcasts(): Promise<IPodcastResponse | null> {
     const data = await response.json();
 
     return data.programs ? { programs: data.programs } : null;
+    
   } catch (error: unknown) {
     if (error instanceof Error) {
       customError('Något blev fel:', error);
     } else {
-      customError('Något blev fel: Okänt fel'); 
+      customError('Något blev fel: Okänt fel');
     }
     return null;
   }
 }
- 
+
 export default fetchPodcasts;
