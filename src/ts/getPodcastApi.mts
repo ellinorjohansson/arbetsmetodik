@@ -1,4 +1,4 @@
-import { customError } from '../log/logger.ts';
+import { customError } from './logger.ts';
 
 export interface IPodcast {
   name: string;

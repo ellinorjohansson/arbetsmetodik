@@ -1,4 +1,4 @@
-import { customError, customLog } from '../log/logger.ts';
+import { customError, customLog } from './logger.ts';
 
 const toggleLightModeButton: HTMLElement | null = document.querySelector('.toggle-btn');
 if (toggleLightModeButton) {
