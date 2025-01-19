@@ -11,11 +11,11 @@ export interface IPodcast {
  
   export async function fetchPodcasts(): Promise<IPodcastResponse | null> {
     try {
-      const response = await fetch(
-        'https://api.sr.se/api/v2/programs/index?programcategoryid=133&format=json&pagination=false&indent=true&filter=program.archived&filterValue=false',
-      );
+      const apiUrl = import.meta.env.VITE_API_URL_PODCAST;
+  
+      const response = await fetch(apiUrl);
       const data = await response.json();
- 
+  
       return data.programs ? { programs: data.programs } : null;
     } catch (error) {
       console.error('Något blev fel:', error);
