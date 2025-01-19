@@ -18,7 +18,7 @@ G
 
 VG
 - [x] Rätt sak på rätt plats
-- [ ] Hantera loggning på ett effektivt sätt
+- [x] Hantera loggning på ett effektivt sätt
 - [ ] Gör en tillgänglighetsgranskning av sidan
 - [ ] Utnyttja features i Sass i CSS:en
 - [ ] Rensa bort paket som inte används
