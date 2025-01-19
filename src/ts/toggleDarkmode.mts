@@ -1,9 +1,11 @@
+import { customError, customLog } from '../log/logger.ts';
+
 const toggleLightModeButton: HTMLElement | null = document.querySelector('.toggle-btn');
 if (toggleLightModeButton) {
     toggleLightModeButton.addEventListener('click', toggleLightMode);
-    console.log(toggleLightModeButton);
+    customLog(toggleLightModeButton);
 } else {
-    console.error('Knappen med klassen "toggle-btn" hittades inte!');
+    customError('Knappen med klassen "toggle-btn" hittades inte!');
 }
 
 export function toggleLightMode(): void {
@@ -12,12 +14,12 @@ export function toggleLightMode(): void {
         if (toggleLightModeButton) {
             toggleLightModeButton.innerHTML = 'Välj mörkt läge';
         }
-        console.log('ljust läge');
+        customLog('ljust läge');
     } else {
         if (toggleLightModeButton) {
             toggleLightModeButton.innerHTML = 'Välj ljust läge';
         }
-        console.log('mörkt läge');
+        customLog('mörkt läge');
     }
 }
 
