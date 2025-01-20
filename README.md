@@ -22,7 +22,7 @@ VG
 - [ ] Gör en tillgänglighetsgranskning av sidan
 - [x] Utnyttja features i Sass i CSS:en
 - [x] Rensa bort paket som inte används
-- [ ] Hantera fel i API-anropet
+- [x] Hantera fel i API-anropet
 - [ ] Gör en Lighthouse-analys
 - [ ] Läs av utvecklingsmiljön
 - [ ] Enhetlig syntax i CSS:en
