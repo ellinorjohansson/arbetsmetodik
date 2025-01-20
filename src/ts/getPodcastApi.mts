@@ -26,7 +26,10 @@ export async function fetchPodcasts(): Promise<IPodcastResponse | null> {
       customError('Något blev fel: Okänt fel');
     }
 
-    alert('Tyvärr, vi kunde inte hämta podcastdata just nu. Försök igen senare.');
+    const errorElement = document.getElementById('errorMessage');
+    if (errorElement) {
+      errorElement.classList.remove('hidden'); 
+    }
 
     return null;
   }
