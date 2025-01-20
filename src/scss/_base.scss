@@ -18,17 +18,17 @@ body {
 
 /* ======= Typegraphy ======= */
 
-h1{
+h1 {
   font-size: 40px;
   text-align: center;
 }
 
-h2{
+h2 {
   font-size: 1.25rem;
   margin: 0;
 }
 
-p{
+p {
   font-size: 1rem;
   margin: 0;
 }
@@ -40,25 +40,25 @@ a {
   cursor: pointer;
 
   &:hover,
-  &:active{
+  &:active {
     color: $link-primary-hover;
   }
 }
 
 /* ======= Images ======= */
 
-img{
+img {
   margin-top: .5rem;
 }
 
 /* ======= Layout ======= */
 
-.section__article{
+.section__article {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
 
-  &-content{
+  &-content {
     display: inline-flex;
     flex-direction: column;
     margin-top: 0;
@@ -68,7 +68,7 @@ img{
 
 /* ======= Dark mode ======= */
 
-.darkmode{
+.darkmode {
   background-color: $darkmode-background;
   color: $darkmode-color;
   a {
