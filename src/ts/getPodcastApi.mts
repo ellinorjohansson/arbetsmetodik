@@ -25,6 +25,9 @@ export async function fetchPodcasts(): Promise<IPodcastResponse | null> {
     } else {
       customError('Något blev fel: Okänt fel');
     }
+
+    alert('Tyvärr, vi kunde inte hämta podcastdata just nu. Försök igen senare.');
+
     return null;
   }
 }
