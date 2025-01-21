@@ -72,11 +72,11 @@ $ npm run dev
 
 ### Mobile
 
-![App Screenshot mobile screen](./assets/screenshots/mobile-screenshot.avif)
+![Screenshot mobile screen](./assets/screenshots/mobile-screenshot.avif)
 
 #### Desktop
 
-![App Screenshot desktop screen](./assets/screenshots/desktop-screenshot.avif)
+![Screenshot desktop screen](./assets/screenshots/desktop-screenshot.avif)
 
 ## Documentation
 
@@ -88,11 +88,11 @@ $ npm run dev
 
 #### HTML
 
-![Validation HTML]()
+![Validation HTML](./assets/validation/HTML%20validation%202025-01-21.png)
 
 #### CSS
 
-![Validation CSS]()
+![Validation CSS](./assets/validation/CSS%20validation%202025-01-21.png)
 
 
 ## Authors
