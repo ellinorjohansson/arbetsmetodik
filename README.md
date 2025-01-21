@@ -23,7 +23,7 @@ VG
 - [x] Utnyttja features i Sass i CSS:en
 - [x] Rensa bort paket som inte används
 - [x] Hantera fel i API-anropet
-- [ ] Gör en Lighthouse-analys
+- [x] Gör en Lighthouse-analys
 - [ ] Läs av utvecklingsmiljön
 - [x] Enhetlig syntax i CSS:en
 - [x] Publicera sidan på GitHub pages 
@@ -83,7 +83,8 @@ $ npm run dev
 
 ### Lighthouse report
 
-![Lighthouse report]()
+![Lighthouse report](./assets/lighthouse/Lighthouse-live%202025-01-21%20112847.png)
+![Lighthouse report inkognito](./assets/lighthouse/Lighthouse-inkognito%202025-01-21%20113049.png)
 
 ### Validation
 
