@@ -11,15 +11,15 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://github.com/Medieinstitutet/fed24d-arbetsmetodik-inl-1-ellinorjohansson">
     <meta property="og:description" content="Utforska SR:s bästa humorprogram och deras topp-podcasts för en underhållande upplevelse.">
-    <meta property="og:image" content="https://">
+    <meta property="og:image" content="">
     <meta property="og:site_name" content="SR Humorprogram">
   </head>
   <body>
     <section class="section__podlist">
-      <button class="section__podlist-button toggle-btn">Välj ljust läge</button>
+      <button class="section__podlist-button toggle-btn" aria-label="Växla mellan mörkt och ljust läge">Välj ljust läge</button>
       <h1>SRs Humorprogram</h1>
       <article class="section__podlist-pods">
-        <h2 id="errorMessage" class="hidden">Tyvärr kan inte podcasts hämtas just nu. Försök igen senare.</h2>
+        <h2 id="errorMessage" class="hidden" aria-live="assertive">Tyvärr kan inte podcasts hämtas just nu. Försök igen senare.</h2>
       </article>
     </section>
     <script type="module" src="/src/main.ts"></script> 
