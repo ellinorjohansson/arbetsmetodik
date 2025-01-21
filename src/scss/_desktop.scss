@@ -1,4 +1,10 @@
 .section__podlist-pods {
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.section__podlist-error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
     
