@@ -28,7 +28,7 @@ export async function fetchPodcasts(): Promise<IPodcastResponse | null> {
 
     const errorElement = document.getElementById('errorMessage');
     if (errorElement) {
-      errorElement.classList.remove('hidden'); 
+      errorElement.classList.remove('hidden');
     }
 
     return null;
