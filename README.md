@@ -1,3 +1,4 @@
+( Tar bort detta efter uppgiften är rättad )
 G
 - [x] Få projektet att funka
 - [x] CSS till Sass
@@ -33,6 +34,9 @@ This project is a simple webpage that fetches data from the SR humor programs AP
 ## Table of Contents
 
 - [Tech](#tech-stack)
+- [Features](#features)
+  - [G Requirements](#g-requirements)
+  - [VG Requirements](#vg-requirements)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
 - [Documentation](#documentation)
@@ -47,6 +51,35 @@ This project is a simple webpage that fetches data from the SR humor programs AP
 - ![Sass](https://img.shields.io/badge/Sass-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)
 - ![ESLint](https://img.shields.io/badge/ESLint-%234B32C3.svg?style=for-the-badge&logo=eslint&logoColor=white)
 - ![Stylelint](https://img.shields.io/badge/Stylelint-%23000000.svg?style=for-the-badge&logo=stylelint&logoColor=white)
+
+## Features  
+
+### G Requirements  
+- [x] Make the project functional  
+- [x] Convert CSS to Sass  
+- [x] Ensure consistent naming in CSS  
+- [x] Convert the project to TypeScript  
+- [x] Maintain consistent code quality  
+- [x] Optimize the mobile view  
+- [x] Implement language support   
+- [x] Add documentation  
+- [x] Improve accessibility (images)  
+- [x] Refactor functions  
+- [x] Remove unnecessary code  
+- [x] Eliminate unused code  
+- [x] Improve naming conventions  
+
+### VG Requirements  
+- [x] Place the right elements in the right locations  
+- [x] Handle logging efficiently  
+- [x] Conduct an accessibility audit of the page  
+- [x] Utilize Sass features in CSS  
+- [x] Remove unused dependencies  
+- [x] Handle API request errors properly  
+- [x] Perform a Lighthouse analysis   
+- [x] Ensure consistent syntax in CSS  
+- [x] Deploy the project on GitHub Pages  
+
 
 ## Installation
 
@@ -80,7 +113,10 @@ $ npm run dev
 
 ### Lighthouse report
 
+#### Live report
 ![Lighthouse report](./assets/lighthouse/Lighthouse-live%202025-01-21%20112847.png)
+
+#### Incognito window report
 ![Lighthouse report inkognito](./assets/lighthouse/Lighthouse-inkognito%202025-01-21%20113049.png)
 
 ### Validation
