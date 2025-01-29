@@ -31,6 +31,8 @@ VG
 
 This project is a simple webpage that fetches data from the SR humor programs API. It displays program images, descriptions and direct links to listen to the episodes.
 
+[Link to live version](https://medieinstitutet.github.io/fed24d-arbetsmetodik-inl-1-ellinorjohansson/)
+
 ## Table of Contents
 
 - [Tech](#tech-stack)
