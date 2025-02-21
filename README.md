@@ -56,14 +56,14 @@ This project is a simple webpage that fetches data from the SR humor programs AP
 
 ## Installation
 
-Install fed24d-arbetsmetodik-inl-1-ellinorjohansson locally with npm
+Install arbetsmetodik locally with npm
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Medieinstitutet/fed24d-arbetsmetodik-inl-1-ellinorjohansson
+$ git clone https://github.com/ellinorjohansson/arbetsmetodik
 
 # Go into the repository
-$ cd fed24d-arbetsmetodik-inl-1-ellinorjohansson
+$ cd arbetsmetodik
 
 # Install dependencies
 $ npm install
