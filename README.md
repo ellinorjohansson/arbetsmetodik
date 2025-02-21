@@ -1,32 +1,3 @@
-( Tar bort detta efter uppgiften är rättad )
-G
-- [x] Få projektet att funka
-- [x] CSS till Sass
-- [x] Enhetlig namngivning i CSS:en
-- [x] Konvertera till TypeScript
-- [x] Enhetlig kodkvalitet
-- [x] Mobilvyn
-- [x] Språk
-- [VG] Rensa loggning
-- [x] Dokumentation
-- [x] Tillgänglighet (bilder)
-- [x] Refaktorera funktioner
-- [x] Eliminera onödig kod
-- [x] Rensa bort kod som inte ska sättas
-- [x] Refaktorera namngivning
-
-VG
-- [x] Rätt sak på rätt plats
-- [x] Hantera loggning på ett effektivt sätt
-- [x] Gör en tillgänglighetsgranskning av sidan
-- [x] Utnyttja features i Sass i CSS:en
-- [x] Rensa bort paket som inte används
-- [x] Hantera fel i API-anropet
-- [x] Gör en Lighthouse-analys
-- [ ] Läs av utvecklingsmiljön
-- [x] Enhetlig syntax i CSS:en
-- [x] Publicera sidan på GitHub pages 
-
 # SR Humor API Webpage
 
 This project is a simple webpage that fetches data from the SR humor programs API. It displays program images, descriptions and direct links to listen to the episodes.
